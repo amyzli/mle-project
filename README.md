@@ -19,25 +19,17 @@ After following Docker Setup instructions #1-4 in the next section, the pipeline
 
 ## Docker Setup
 1. Build docker image from dockerfile (image name: airflow_custom:latest). 
-If using terminal, cd to the folder where the dockerfile is located and run:
-    docker build -t airflow-custom:latest .
-If using Linux:
-    echo -e "AIRFLOW_UID=$(id -u)" > .env
+If using terminal, cd to the folder where the dockerfile is located and run: docker build -t airflow-custom:latest .
+If using Linux: echo -e "AIRFLOW_UID=$(id -u)" > .env
 
-2. To create first user account, run:
-    docker compose up airflow-init
-3. To start all services, run:
-    docker compose up
+2. To create first user account, run: docker compose up airflow-init
+3. To start all services, run: docker compose up
 4. Please keep the terminal where docker compose up was executed in
-5. To clean up, run:
-    docker compose down --volumes --rmi all 
+5. To clean up, run: docker compose down --volumes --rmi all 
 
 
 For terminal access after the docker containers are up, do the following:
-6. For terminal access of the airflow container, run: 
-    ./airflow.sh bash
-7. For the list of all dags, run: 
-    airflow dags list
-8. For triggering the dag (dag_id should be mlops_pipeline), run: 
-    airflow dags trigger <dag_id>
+6. For terminal access of the airflow container, run: ./airflow.sh bash
+7. For the list of all dags, run: airflow dags list
+8. For triggering the dag (dag_id should be mlops_pipeline), run: airflow dags trigger <dag_id>
 
