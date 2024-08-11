@@ -56,7 +56,7 @@ E. Evaluation: please see model_evaluation.py file and evaluation_results.csv fo
 Out of the three algorithms, the XGBoost model had the highest AUC score. In the case of loan defaults, recall score is more important than accuracy or precision since the defaulter percentage is relatively low in the population (8%), and false positives are tolerated. By comparing the AUC, precision, recall, and F1 scores between the XGBoost, Decision Tree, and Random Forest algorithms, XGBoost had the highest recall score and also AUC score, which suggests that it is the best in identifying defaulters. 
 
 ## 2. Workflow Automation Tools
-Apache airflow is used to orchestrate data_ingestion.py, data_processing.py, model_evaluation.py, and the three model training scripts in parallel. 
+Apache airflow is used to orchestrate data_ingestion.py, data_processing.py, model_evaluation.py, and the three model training scripts in parallel. \
 ![Logo](images/airflow.JPG)
 
 ## 3. Containerization
