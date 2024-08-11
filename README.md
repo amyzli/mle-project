@@ -11,10 +11,10 @@ This README includes:
 - Model Monitoring Strategies
 
 ## Project Setup
-This repo includes the Dockerfile, EDA, data ingestion, data processing, model training, model evaluation, and airflow orchestration of the pipeline. Below is the pipeline set up: \
+This repo includes the Dockerfile, EDA, data ingestion, data processing, model training, model evaluation, and airflow orchestration of the pipeline. Below is the pipeline set up:\
 ![Logo](images/pipeline.jpeg)
 
-Due to data size limitation on GitHub, please download the data folder provided via email and put the data folder under the root directory: \ 
+Due to data size limitation on GitHub, please download the data folder provided via email and put the data folder under the root directory:\ 
 ![Logo](images/datafolder.jpeg)
 
 After following Docker Setup instructions #1-4 in the next section, the pipeline can be triggered by the following steps:
@@ -26,7 +26,7 @@ After following Docker Setup instructions #1-4 in the next section, the pipeline
 6. For clean up, refer to Docker Setup #5
 
 ## Docker Setup
-1. Build docker image from dockerfile (image name: airflow_custom:latest). \
+1. Build docker image from dockerfile (image name: airflow_custom:latest).\
 If using terminal, cd to the folder where the dockerfile is located and run: docker build -t airflow-custom:latest .\
 If using Linux: echo -e "AIRFLOW_UID=$(id -u)" > .env
 
@@ -50,13 +50,13 @@ C. Data preprocessing: please see data_processing.py
 
 D. Model training: please see model_train.py files, three algorithms are provided: XGBoost, Decision Tree, and Random Forest. Minimal hyperparameter tuning was done to minimize compute. 
 
-E. Evaluation: please see model_evaluation.py file and evaluation_results.csv for metric outputs. \
+E. Evaluation: please see model_evaluation.py file and evaluation_results.csv for metric outputs.\
 ![Logo](images/evaluation.JPG)
 
 Out of the three algorithms, the XGBoost model had the highest AUC score. In the case of loan defaults, recall score is more important than accuracy or precision since the defaulter percentage is relatively low in the population (8%), and false positives are tolerated. By comparing the AUC, precision, recall, and F1 scores between the XGBoost, Decision Tree, and Random Forest algorithms, XGBoost had the highest recall score and also AUC score, which suggests that it is the best in identifying defaulters. 
 
 ## 2. Workflow Automation Tools
-Apache airflow is used to orchestrate data_ingestion.py, data_processing.py, model_evaluation.py, and the three model training scripts in parallel. \
+Apache airflow is used to orchestrate data_ingestion.py, data_processing.py, model_evaluation.py, and the three model training scripts in parallel.\
 ![Logo](images/airflow.JPG)
 
 ## 3. Containerization
