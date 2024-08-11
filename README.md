@@ -57,7 +57,7 @@ Out of the three algorithms, the XGBoost model had the highest AUC score. In the
 
 ## 2. Workflow Automation Tools
 Apache airflow is used to orchestrate data_ingestion.py, data_processing.py, model_evaluation.py, and the three model training scripts in parallel. 
-![Logo](images/pipeline.jpeg)
+![Logo](images/airflow.JPG)
 
 ## 3. Containerization
 The project has been dockerized to include all necessary dependencies.
