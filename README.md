@@ -1,6 +1,14 @@
 # mle-project
 
 Objective Develop and present a machine learning project that includes data preprocessing, model training, pipeline orchestration, containerization, and (as a bonus) API development and CI/CD pipeline suggestion.
+This README includes:
+- Project Setup
+- Docker Setup
+- 1. Dataset Selection & Model Training
+- 2. Workflow Automation Tools
+- 3. Containerization
+- 4. CI/CD Proposal
+- 5. Model Monitoring Strategies
 
 ## Project Setup
 This repo includes the Dockerfile, EDA, data ingestion, data processing, model training, model evaluation, and airflow orchestration of the pipeline. Below is the pipeline set up:
@@ -32,4 +40,6 @@ For terminal access after the docker containers are up, do the following:
 6. For terminal access of the airflow container, run: ./airflow.sh bash
 7. For the list of all dags, run: airflow dags list
 8. For triggering the dag (dag_id should be mlops_pipeline), run: airflow dags trigger <dag_id>
+
+##
 
