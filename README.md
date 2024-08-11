@@ -15,7 +15,7 @@ This repo includes the Dockerfile, EDA, data ingestion, data processing, model t
 
 ![Logo](images/pipeline.jpeg)
 
-Due to data size limitation on GitHub, please download the data folder provided via email and put the data folder under the root directory:
+Due to data size limitation on GitHub, please download the data folder provided via link provided by email and put the data folder under the root directory:
 
 
 ![Logo](images/datafolder.jpeg)
