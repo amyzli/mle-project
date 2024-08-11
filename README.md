@@ -74,21 +74,21 @@ One tool that can be easily integrated is Grafana. Specific metrics can be logge
 
 **Data Quality Metrics:**
 To monitor data quality (e.g. the quality of features for loan applications), various metrics can be monitored overtime and compared with historical values to ensure stability:
-Percentage of null values
-Feature value distribution, average, mean, mode, max, min
-JS divergence or statistical tests (KS test etc.)
+- Percentage of null values
+- Feature value distribution, average, mean, mode, max, min
+- JS divergence or statistical tests (KS test etc.)
 
 
 **Model Stability Metrics:**
 To monitor model stability, metrics can be monitored based on model scores. This will not only check for whether the model’s predictions are consistent, but also check for potential changes in the market and any significant changes with the input data.
-Score distribution, average, mean, mode, max, min
-JS divergence or statistical tests (KS test etc.)
-Feature importance - ensure feature importance stays relatively stable. In addition, client profiling based on feature importance can be tracked as well. For example, splitting clients into 10 deciles based on their prediction score, and calculate each decile’s average feature value for the top 10 features. 
+- Score distribution, average, mean, mode, max, min
+- JS divergence or statistical tests (KS test etc.)
+- Feature importance - ensure feature importance stays relatively stable. In addition, client profiling based on feature importance can be tracked as well. For example, splitting clients into 10 deciles based on their prediction score, and calculate each decile’s average feature value for the top 10 features. 
 
 
 **Model Performance Metrics:**
 To monitor model performance, the ground truth label will need to be provided (whether the loan was defaulted). This often will lead to a lag in monitoring performance by several months depending on the time it takes for a loan to default and the time it takes to ingest the appropriate data. Metrics that can be monitored in this case are:
-AUC score, accuracy, F1, precision, recall etc. 
+- AUC score, accuracy, F1, precision, recall etc. 
 
 **Additional Metrics:**
 Additional threshold or trigger-based monitoring can be used depending on feasibility. For example, if the average credit score for clients is below a certain threshold, then trigger an alert. This may be due to insufficient ingestion of credit union data or overall decrease in loan application quality.
