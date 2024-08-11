@@ -36,7 +36,7 @@ docker rmi amyzli/airflow_custom:latest
 
 Alternatively, if using dockerfile within this repo, to build new image:\
 Build docker image from dockerfile (image name: airflow_custom:latest).\
-If using terminal, cd to the folder where the dockerfile is located and run: docker build -t airflow-custom:latest .\
+If using terminal, cd to the folder where the dockerfile is located and run: docker build -t airflow-custom:latest .
 
 1. If using Linux, need to run: echo -e "AIRFLOW_UID=$(id -u)" > .env
 2. To create first user account, run: docker compose up airflow-init
