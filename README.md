@@ -11,10 +11,10 @@ This README includes:
 - Model Monitoring Strategies
 
 ## Project Setup
-This repo includes the Dockerfile, EDA, data ingestion, data processing, model training, model evaluation, and airflow orchestration of the pipeline. Below is the pipeline set up:\
+This repo includes the Dockerfile, EDA, data ingestion, data processing, model training, model evaluation, and airflow orchestration of the pipeline. Below is the pipeline set up: \
 ![Logo](images/pipeline.jpeg)
 
-Due to data size limitation on GitHub, please download the data folder provided via email and put the data folder under the root directory:\
+Due to data size limitation on GitHub, please download the data folder provided via email and put the data folder under the root directory: \ 
 ![Logo](images/datafolder.jpeg)
 
 After following Docker Setup instructions #1-4 in the next section, the pipeline can be triggered by the following steps:
