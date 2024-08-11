@@ -45,11 +45,6 @@ If using terminal, cd to the folder where the dockerfile is located and run: doc
 5. To clean up, run: docker compose down --volumes --rmi all 
 
 
-For terminal access after the docker containers are up, do the following:\
-6. For terminal access of the airflow container, run: ./airflow.sh bash\
-7. For the list of all dags, run: airflow dags list\
-8. For triggering the dag (dag_id should be mlops_pipeline), run: airflow dags trigger <dag_id>
-
 ## 1. Dataset Selection & Model Training
 A. Dataset: Loan Defaulter dataset from kaggle: https://www.kaggle.com/datasets/gauravduttakiit/loan-defaulter
 
