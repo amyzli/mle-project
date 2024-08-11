@@ -11,10 +11,10 @@ This README includes:
 - Model Monitoring Strategies
 
 ## Project Setup
-This repo includes the Dockerfile, EDA, data ingestion, data processing, model training, model evaluation, and airflow orchestration of the pipeline. Below is the pipeline set up:
+This repo includes the Dockerfile, EDA, data ingestion, data processing, model training, model evaluation, and airflow orchestration of the pipeline. Below is the pipeline set up:\
 ![Logo](images/pipeline.jpeg)
 
-Due to data size limitation on GitHub, please download the data folder provided via email and put the data folder under the root directory:
+Due to data size limitation on GitHub, please download the data folder provided via email and put the data folder under the root directory:\
 ![Logo](images/datafolder.jpeg)
 
 After following Docker Setup instructions #1-4 in the next section, the pipeline can be triggered by the following steps:
@@ -63,7 +63,7 @@ Apache airflow is used to orchestrate data_ingestion.py, data_processing.py, mod
 The project has been dockerized to include all necessary dependencies.
 
 ## 4. CI/CD Proposal
-Below is the CI/CD proposal and possible tools to be used:
+Below is the CI/CD proposal and possible tools to be used:\
 ![Logo](images/cicd.jpeg)
 
 ## 5. Model Monitoring Strategies
